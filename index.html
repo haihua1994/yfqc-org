@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云返汽车</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+
+        /* 轮播广告 */
+
+        .carousel {
+            height: 500px;
+            margin-bottom: 60px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* 简介 */
+
+        .summary {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .summary .col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 车辆风格 */
+
+        .feature-divider {
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 30px 0;
+        }
+
+        .feature-heading {
+            font-size: 50px;
+            color: #2a6496;
+        }
+
+        .feature-heading .text-muted {
+            font-size: 28px;
+        }
+
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img style="height:50px;position: relative;top:-15px;;"src="images/nav_logo.png" alt=""></a>
+            <!-- <img style="height:50px;position: absolute;top:0;left:0;"src="images/nav_logo.png" alt=""> -->
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">首页</a></li>
+                <li><a href="#summary-container">车辆简介</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">车辆风格 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-guochan">国产</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-rixi">日系</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-hangguo">韩国系</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-sport">运动系</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-cross-country">越野</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/1.jpg" alt="1 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>兰博基尼Veneno</h1>
+
+                    <p>在2013年日内瓦车展上展推出的一个纪念版超级跑车。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="" target="_blank">点我购买</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/2.jpg" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>本田思域</h1>
+
+                    <p>东风本田思域外观大气、时尚，车身线条流畅，掀背式外观与老款相比有了很大改动。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="" target="_blank"
+                          role="button">点我购买</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/3.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>现代瑞纳</h1>
+
+                    <p>外观运用了流畅的线条设计，风格偏重于时尚，定位于年轻消费者</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="" target="_blank"
+                          role="button">点我购买</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/4.jpg" alt="4 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>别克英朗</h1>
+
+                    <p>英朗XT和英朗GT是2010年上海通用汽车别克品牌基于“全球平台，欧美技术”推出的最新高端中级车</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="" target="_blank"
+                          role="button">点我购买</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/5.jpg" alt="5 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>保时捷911</h1>
+
+                    <p>保时捷911是由德国斯图加特市的保时捷公司所生产的跑车。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="" target="_blank"
+                          role="button">点我购买</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+<!-- 主要内容 -->
+<div class="container summary">
+
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+        <div class="col-md-4">
+            <img class="img-circle" src="images/car3.png" alt="chrome">
+
+            <h2>宝马</h2>
+
+            <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我购买</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/car1.png" alt="firefox">
+
+            <h2>捷达</h2>
+
+            <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我购买</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/car2.png" alt="safari">
+
+            <h2>比亚迪</h2>
+
+            <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我购买</a></p>
+        </div>
+    </div>
+
+    <!-- 特性 -->
+
+    <hr class="feature-divider">
+
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-guochan" role="tab" data-toggle="tab">国产</a></li>
+        <li><a href="#tab-rixi" role="tab" data-toggle="tab">日系</a></li>
+        <li><a href="#tab-hangguo" role="tab" data-toggle="tab">韩国系</a></li>
+        <li><a href="#tab-sport" role="tab" data-toggle="tab">运动系</a></li>
+        <li><a href="#tab-cross-country" role="tab" data-toggle="tab">越野</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-guochan">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">比亚迪F6 <span
+                            class="text-muted">国内自主开发的设计</span></h2>
+
+                    <p class="lead">比亚迪F6从利润薄弱的低端市场拐向高端的最重要棋子。比亚迪外型在保持C级轿车的一些基本设计要素之外
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/byd.jpg"
+                         alt="Chrome">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-rixi">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
+                         alt="Firefox">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">轩逸 <span class="text-muted">东风日产</span>
+                    </h2>
+
+                    <p class="lead">东风日产乘用车公司成立于2003年,秉承“人·车·生活”的企业愿景、“领先半步”的理念
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-hangguo">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">东风悦达起亚 <span class="text-muted">韩国最早的汽车制造商</span></h2>
+
+                    <p class="lead">东风悦达起亚旗下拥有新一代智跑、新e代福瑞迪、KX CROSS、凯绅、焕驰、全新K5、K4、新K3</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/kia.jpg"
+                         alt="Safari">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-sport">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/lbjn.jpg"
+                         alt="Opera">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">兰博基尼 <span class="text-muted">全球顶级跑车制造商</span>
+                    </h2>
+
+                    <p class="lead">兰博基尼（Automobili Lamborghini S.p.A.）是一家意大利汽车生产商，全球顶级跑车制造商及欧洲奢侈品标志之一。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-cross-country">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">我的11路公交车 <span class="text-muted">你懂的</span></h2>
+
+                    <p class="lead">
+                        摩拜单车的出现，让越来越多中国人从这些烦人事中解放出来，并成功推广了一种更健康、环保及时髦的生活方式。
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/mb.jpg"
+                         alt="IE">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">温馨提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        广东云返汽车销售有限公司于2016年04月13日在广州市工商行政管理局番禺分局登记成立。法定代表人何xx，公司经营范围包括汽车销售;汽车零售;信息电子技术服务;科技项目评估服务等
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">i know</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+        <p>&copy; https://github.com/haihua1994 </p>
+    </footer>
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            //console.log(href);
+            var tabId = $(this).attr('data-tab');
+            console.log(tabId);
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top-70);
+                //70=l0+60    margin-bottom: 60px; margin-bottom: 60px;找的好辛苦啊mmp
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
