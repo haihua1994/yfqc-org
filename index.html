@@ -118,6 +118,21 @@
                 margin-top: 120px;
             }
         }
+        /*.navbar-inverse{
+            background: #df990f;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color:#fff;
+        }
+        .navbar-inverse .navbar-nav>li>a:hover{
+            color: #000;
+        }
+        .navbar-inverse .navbar-nav>.active>a{
+            background: #FFA500;
+        }
+        .navbar-inverse .navbar-nav>.hover>a{
+           background: #FFA500; 
+        }*/
     </style>
 
 </head>
@@ -150,7 +165,19 @@
                         <li><a href="#feature-tab" data-tab="tab-cross-country">越野</a></li>
                     </ul>
                 </li>
-                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">车辆风格2 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab2" data-tab="tab-guochan2">国产2</a></li>
+                        <li><a href="#feature-tab2" data-tab="tab-rixi2">日系2</a></li>
+                        <li><a href="#feature-tab2" data-tab="tab-hangguo2">韩国系2</a></li>
+                        <li><a href="#feature-tab2" data-tab="tab-sport2">运动系2</a></li>
+                        <li><a href="#feature-tab2" data-tab="tab-cross-country2">越野2</a></li>
+                    </ul>
+                </li>
+               <!--  <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li> -->
+                <li><a href="#">招商加盟</a></li>
+                <li><a href="#summary-container2">新闻资讯</a></li>
             </ul>
         </div>
     </div>
@@ -254,7 +281,9 @@
 
             <h2>宝马</h2>
 
-            <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+           <p>我开宝马 你骑共享</p>
+            <p>我吃火锅 你吃火锅底料</p>
+            <p>我喝酸奶 你舔酸奶瓶盖</p>
 
             <p><a class="btn btn-default" href="#" role="button">点我购买</a></p>
         </div>
@@ -262,23 +291,24 @@
             <img class="img-circle" src="images/car1.png" alt="firefox">
 
             <h2>捷达</h2>
-
-            <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我购买</a></p>
+            <p>我开宝马 你骑共享</p>
+            <p>我吃火锅 你吃火锅底料</p>
+            <p>我喝酸奶 你舔酸奶瓶盖</p>
+            <a class="btn btn-default" href="#" role="button">点我购买</a></p>
         </div>
         <div class="col-md-4">
             <img class="img-circle" src="images/car2.png" alt="safari">
 
             <h2>比亚迪</h2>
 
-            <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我购买</a></p>
+            <p>我开宝马 你骑共享</p>
+            <p>我吃火锅 你吃火锅底料</p>
+            <p>我喝酸奶 你舔酸奶瓶盖</p>
+            <a class="btn btn-default" href="#" role="button">点我购买</a></p>
         </div>
     </div>
 
-    <!-- 特性 -->
+    <!-- 车辆风格 -->
 
     <hr class="feature-divider">
 
@@ -302,7 +332,7 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/byd.jpg"
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
                          alt="Chrome">
                 </div>
             </div>
@@ -332,7 +362,7 @@
                     <p class="lead">东风悦达起亚旗下拥有新一代智跑、新e代福瑞迪、KX CROSS、凯绅、焕驰、全新K5、K4、新K3</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/kia.jpg"
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
                          alt="Safari">
                 </div>
             </div>
@@ -340,7 +370,7 @@
         <div class="tab-pane" id="tab-sport">
             <div class="row feature">
                 <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/lbjn.jpg"
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
                          alt="Opera">
                 </div>
                 <div class="col-md-7">
@@ -363,13 +393,99 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/mb.jpg"
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
                          alt="IE">
                 </div>
             </div>
         </div>
     </div>
 
+     <ul class="nav nav-tabs" role="tablist" id="feature-tab2">
+        <li class="active"><a href="#tab-guochan2" role="tab" data-toggle="tab">国产2</a></li>
+        <li><a href="#tab-rixi2" role="tab" data-toggle="tab">日系2</a></li>
+        <li><a href="#tab-hangguo2" role="tab" data-toggle="tab">韩国系2</a></li>
+        <li><a href="#tab-sport2" role="tab" data-toggle="tab">运动系2</a></li>
+        <li><a href="#tab-cross-country2" role="tab" data-toggle="tab">越野2</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-guochan2">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">比亚迪F6 <span
+                            class="text-muted">国内自主开发的设计</span></h2>
+
+                    <p class="lead">比亚迪F6从利润薄弱的低端市场拐向高端的最重要棋子。比亚迪外型在保持C级轿车的一些基本设计要素之外
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
+                         alt="Chrome">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-rixi2">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
+                         alt="Firefox">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">轩逸 <span class="text-muted">东风日产</span>
+                    </h2>
+
+                    <p class="lead">东风日产乘用车公司成立于2003年,秉承“人·车·生活”的企业愿景、“领先半步”的理念
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-hangguo2">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">东风悦达起亚 <span class="text-muted">韩国最早的汽车制造商</span></h2>
+
+                    <p class="lead">东风悦达起亚旗下拥有新一代智跑、新e代福瑞迪、KX CROSS、凯绅、焕驰、全新K5、K4、新K3</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
+                         alt="Safari">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-sport2">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
+                         alt="Opera">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">兰博基尼 <span class="text-muted">全球顶级跑车制造商</span>
+                    </h2>
+
+                    <p class="lead">兰博基尼（Automobili Lamborghini S.p.A.）是一家意大利汽车生产商，全球顶级跑车制造商及欧洲奢侈品标志之一。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-cross-country2">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">我的11路公交车 <span class="text-muted">你懂的</span></h2>
+
+                    <p class="lead">
+                        摩拜单车的出现，让越来越多中国人从这些烦人事中解放出来，并成功推广了一种更健康、环保及时髦的生活方式。
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xy.jpg"
+                         alt="IE">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 关于 -->
     <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
          aria-hidden="true">
@@ -391,7 +507,41 @@
             </div>
         </div>
     </div>
-
+    <!-- 这里是新闻资讯 -->
+    <div class="row" id="summary-container2">
+        <p>这里是云返汽车新闻资讯</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est labore explicabo doloribus. Amet nesciunt explicabo ex labore debitis dignissimos totam adipisci architecto, magnam minus hic velit nobis fugit deleniti nihil.</p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas, molestias earum tempore ex pariatur hic tempora vitae expedita, deserunt voluptatem. Laudantium laboriosam nisi eius consequatur quibusdam unde laborum at.</span>
+        <span>Neque cumque natus repellat rem sequi aspernatur. Sequi libero minima, molestias! Earum, fugit! Voluptas minus facere, laborum, suscipit nobis nam veritatis. Ipsam quia labore, illum impedit, tenetur necessitatibus non tempore.</span>
+        <span>Perferendis ratione voluptatum nam quibusdam, necessitatibus optio eligendi sint consectetur, cupiditate rem tempore cumque, ipsum at praesentium inventore sapiente. Quam deserunt adipisci error perspiciatis, minima explicabo, neque pariatur dolore et?</span>
+        <span>Temporibus repellendus dicta odit sapiente numquam accusamus sequi, necessitatibus, eaque non libero minus sint officia accusantium cupiditate consectetur, quos facere sit? Debitis modi, doloremque pariatur culpa, optio facere ut fugiat!</span>
+        <span>Quaerat delectus consequuntur ipsa quidem nostrum accusamus cumque corrupti libero ab aliquam dolorum atque excepturi omnis, eaque blanditiis, laborum voluptatem incidunt voluptatum soluta vitae! Perferendis, aut, natus. Dicta, suscipit, repellendus!</span>
+        <span>Dolore ut, similique fuga, suscipit iure cumque vitae tenetur accusamus et animi aut, maxime sapiente repellendus quo maiores assumenda unde blanditiis totam, voluptatibus illum temporibus! Hic amet pariatur debitis labore!</span>
+        <span>Perferendis, facere illum fuga vero, vitae repellendus odit, deserunt itaque atque dolore minus porro. Dolores minima, omnis adipisci eos sequi optio et. Quas itaque iure reprehenderit veritatis, sint necessitatibus? Sed.</span>
+        <span>Distinctio qui, explicabo tempora hic ullam odio libero corporis numquam accusamus, ut et cum alias architecto reprehenderit repellendus obcaecati soluta debitis necessitatibus, saepe deleniti. Non eos soluta neque necessitatibus magni.</span>
+        <span>Minus laudantium animi quod distinctio, sequi delectus sit! Repellendus aliquid placeat doloribus! Accusamus atque explicabo id doloremque aliquid numquam, dolorum quae facilis inventore autem nulla excepturi quas obcaecati ratione voluptates?</span>
+        <span>Quod alias voluptatibus laborum amet. Et aut officiis dolor, quam magnam harum assumenda libero, impedit praesentium quas, earum repellat obcaecati amet blanditiis nemo. Exercitationem delectus inventore molestiae fuga, libero explicabo.</span></p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellendus dolor inventore quasi ipsa ipsum odit aspernatur, molestiae recusandae excepturi fugit ex accusantium nesciunt adipisci est, velit! Nulla, sed. Officiis.</span>
+        <span>Dolor amet nulla, officiis illo mollitia, doloribus odio, quis adipisci natus laudantium qui quo! Aperiam blanditiis repudiandae asperiores consequatur cum, officiis inventore, eius aut commodi omnis ea, incidunt a! Accusantium.</span>
+        <span>Totam, perferendis aliquam reprehenderit repudiandae error aperiam quo voluptatum quos iusto excepturi minus rem recusandae facere, inventore iste et quisquam accusamus cum modi sint omnis, deserunt vitae laborum maiores. Maiores!</span>
+        <span>Exercitationem eligendi unde reiciendis quas eius, ipsum adipisci, molestiae harum est minus porro beatae et a, alias, dolore iusto. Inventore molestias reiciendis, porro fugiat consequatur quibusdam cum obcaecati quia quis.</span>
+        <span>Veritatis deleniti soluta quae vero voluptates officiis, illo debitis voluptatibus molestias molestiae repellat, quia qui architecto quaerat. Asperiores illum numquam fuga tempore nesciunt architecto labore. Praesentium, minima, reiciendis! Autem, magni!</span>
+        <span>Maiores atque obcaecati sit vitae consequatur facere quos quia maxime magni id, rem eum saepe, minima praesentium labore odit architecto voluptatibus ex porro recusandae, modi magnam quasi! Nobis, voluptatibus, laboriosam?</span>
+        <span>Magnam corrupti, odio eos iure, accusantium alias distinctio voluptatum corporis delectus aspernatur totam, fugit quas quod libero quisquam velit voluptate dicta. Neque, mollitia, in! Consectetur veritatis aspernatur doloribus facere modi.</span>
+        <span>Voluptatem, alias, natus! Incidunt sequi illo consequatur cum tempore nesciunt distinctio optio sed earum inventore tempora vitae saepe, maxime adipisci cupiditate laboriosam quasi possimus mollitia repudiandae magnam culpa cumque recusandae.</span>
+        <span>Eligendi beatae numquam, dolore vel aperiam non rerum architecto eius quis veniam optio id, eveniet praesentium quam nam. Fugit harum labore repudiandae et praesentium doloribus autem ut saepe eum obcaecati?</span>
+        <span>Nam similique odio debitis ullam libero. Consectetur veritatis aperiam deserunt iure similique voluptatum corporis ipsum adipisci, ab voluptates fugit explicabo, at ipsa, ex incidunt ut? Expedita, quia tempora commodi cum!</span>
+        <span>Rerum dolores deserunt qui facilis odio! Ipsum, soluta ea quisquam laborum facere ducimus adipisci ipsa maxime ullam perferendis, odio sequi officia corporis molestiae aliquid ab impedit ex hic, nisi deleniti.</span>
+        <span>Nesciunt perferendis molestiae repudiandae maxime assumenda porro nihil, ipsa iusto soluta, ullam numquam reiciendis nobis possimus obcaecati quo culpa, vero. Possimus tempora, error obcaecati sapiente labore velit, commodi laudantium. Veritatis.</span>
+        <span>Voluptatem error tenetur voluptas assumenda culpa quae iste, repellendus rerum iusto soluta fugiat labore distinctio quidem at sunt ipsa quaerat porro perferendis nemo voluptates mollitia, sed nobis! Quos corrupti, quae.</span>
+        <span>Aut delectus eaque recusandae! Reprehenderit amet animi consequuntur quo delectus sunt ipsa excepturi quasi praesentium ullam mollitia, maxime officiis eius reiciendis adipisci qui voluptatibus sapiente deleniti possimus eos minima, porro!</span>
+        <span>Rem officiis, odio quibusdam adipisci, sed optio architecto laudantium illum velit sequi! Facilis, dolore commodi nam numquam, quidem quas minima provident quo. Libero, voluptates, tenetur. Dolorem eum sapiente ratione necessitatibus!</span>
+        <span>Aliquam, commodi animi enim cupiditate maxime cumque assumenda adipisci quisquam incidunt nam delectus totam fuga saepe placeat autem sequi repellat vero nobis nostrum unde! Repudiandae fugiat cum nisi, adipisci tempore!</span>
+        <span>Maiores architecto, sequi quod blanditiis cupiditate dolorum deleniti, quas velit quasi. Pariatur vero, accusantium, dolor saepe animi consequatur maiores tempora deleniti laborum fugiat reiciendis quae! Debitis consectetur porro et suscipit.</span>
+        <span>Est iste qui recusandae autem ab cupiditate tempora, corporis dolores quidem. Explicabo laudantium sapiente cum voluptatem tempora dignissimos reprehenderit architecto eos perferendis consectetur rem modi nostrum, animi officiis error accusamus.</span>
+        <span>Pariatur, voluptatibus voluptatum reprehenderit, accusamus quaerat, totam quasi nisi, sunt commodi ullam dolor aut itaque eum eius. Iure numquam eum, impedit, labore sed ipsa necessitatibus harum, ipsam quo, a eos.</span>
+        <span>Ut iusto, excepturi odio expedita minima corrupti, nam voluptatum voluptas iure inventore nulla architecto numquam! Quibusdam sed fugiat ipsum voluptatibus laborum necessitatibus autem, qui inventore tenetur. Esse alias eos repudiandae.</span></p>
+    </div>
 
     <footer>
         <p class="pull-right"><a href="#top">回到顶部</a></p>
@@ -408,15 +558,14 @@
         $('#ad-carousel').carousel();
         $('#menu-nav .navbar-collapse a').click(function (e) {
             var href = $(this).attr('href');
-            //console.log(href);
             var tabId = $(this).attr('data-tab');
-            console.log(tabId);
             if ('#' !== href) {
                 e.preventDefault();
                 $(document).scrollTop($(href).offset().top-70);
                 //70=l0+60    margin-bottom: 60px; margin-bottom: 60px;找的好辛苦啊mmp
                 if (tabId) {
                     $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                    $('#feature-tab2 a[href=#' + tabId + ']').tab('show');
                 }
             }
         });
