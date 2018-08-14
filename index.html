@@ -23,8 +23,8 @@
         /* 轮播广告 */
 
         .carousel {
-            height: 500px;
-            margin-bottom: 60px;
+            height: auto;
+            margin-bottom: 30px;
         }
 
         .carousel .item {
@@ -88,7 +88,7 @@
 
             .carousel {
                 height: auto;
-                margin-bottom: 30px;
+                margin-bottom: 0px;
             }
 
             .carousel .item {
@@ -137,6 +137,16 @@
             text-align: center;
             background: #fff;
         }
+         #summary-container div p{
+         	text-align: left;
+         }
+         #culture-container{
+         	text-align: center;
+         	margin-bottom: 20px;
+         }
+         #culture-container img{
+         	width: 100%;
+         }
     </style>
 
 </head>
@@ -159,7 +169,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#ad-carousel"><span style="padding-right:10px;"class="glyphicon glyphicon-home"></span>首页</a></li>
                 <li><a href="#summary-container">云返汽车</a></li>
-                <li class="dropdown">
+                <li><a href="#culture-container">云返文化</a></li>
+               <!--  <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">企业文化<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#feature-tab" data-tab="tab-guochan">企业愿景</a></li>
@@ -168,7 +179,7 @@
                         <li><a href="#feature-tab" data-tab="tab-sport">企业团队</a></li>
                         <li><a href="#feature-tab" data-tab="tab-cross-country">企业价值观</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">车辆风格2 <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -181,12 +192,11 @@
                 </li> -->
                <!--  <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li> -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">新闻资讯 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">新闻资讯<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="http://www.infuncar.com/site/index.html#/news/1" data-tab="tab-guochan">公司动态</a></li>
-                        <li><a href="http://www.infuncar.com/site/index.html#/news/2" data-tab="tab-rixi">集团动态</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-guochan">公司动态</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-rixi">企业动态</a></li>
                     </ul>
-                </li>
                 <li><a href="#">招商加盟</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#about-modal">联系我们</a></li>
 
@@ -207,7 +217,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img src="http://m.infuncar.com/upload/advert/20180718141256899.jpg" alt="1 slide">
+            <img src="images/2.jpg" alt="1 slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -220,7 +230,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="http://m.infuncar.com/upload/advert/20180709110631734.jpg" alt="2 slide">
+            <img src="images/1.jpg" alt="2 slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -288,7 +298,7 @@
 
     <!-- 简介 -->
         <div class="row" id="summary-container">
-        	<h1 style="color: #fd990f;text-align: center;">主打车型</h1>
+        	<h1 style="text-align: center;">主打车型</h1>
             <div class="col-md-3">
                 <img class="" style="width:100%;" src="https://www.landrover.com.cn/Images/L494_18MY_105_GLHD_DX_FLIP_Device-Desktop_680x450_305-439622_680x450.jpg?v=1" alt="chrome">
                 <p>路虎新款揽胜 - 揽胜家族旗舰车型</p>
@@ -368,13 +378,16 @@
     <!-- 车辆风格 -->
 
     <hr class="feature-divider">
+    <div class="clear"></div>
+    <div id="culture-container">
+    	<h1>企业文化<i style="font-size: 20px;color: blue;"> &nbsp;>>使命愿景价值观</i></h1>
+    	<img src="http://www.januscn.com/uploadfiles/2014/08/201408020922192219.png" alt="">
+    </div>
 
     <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-        <li class="active"><a href="#tab-guochan" role="tab" data-toggle="tab">企业愿景</a></li>
-        <li><a href="#tab-rixi" role="tab" data-toggle="tab">企业使命</a></li>
-        <li><a href="#tab-hangguo" role="tab" data-toggle="tab">企业精神</a></li>
-        <li><a href="#tab-sport" role="tab" data-toggle="tab">企业团队</a></li>
-        <li><a href="#tab-cross-country" role="tab" data-toggle="tab">企业价值观</a></li>
+    	<h1 style="text-align: center;">新闻资讯<i style="font-size: 20px;color: blue;"> &nbsp;>>新闻头条</i></h1>
+        <li class="active"><a href="#tab-guochan" role="tab" data-toggle="tab">企业动态</a></li>
+        <li><a href="#tab-rixi" role="tab" data-toggle="tab">公司动态</a></li>
     </ul>
 
     <div class="tab-content">
@@ -393,11 +406,61 @@
                          alt="Chrome">
                 </div>
             </div>
+            <div><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolore quo molestiae ut blanditiis, quos, quidem unde atque hic maiores modi nobis similique officia soluta error ab debitis veritatis aspernatur!</div>
+            <div>Temporibus repellendus expedita officiis, natus saepe incidunt minus neque rerum, amet debitis nisi assumenda ipsum quisquam, dignissimos reiciendis quasi reprehenderit consequuntur blanditiis maxime! Porro placeat suscipit accusamus, nulla in sunt!</div>
+            <div>Sunt obcaecati odio aspernatur expedita veniam, maiores! Similique sunt delectus, quis laboriosam atque harum natus temporibus quae sint aliquid ullam voluptatum unde eligendi, ratione. Consequuntur molestias, fugiat repellendus ipsum voluptatibus.</div>
+            <div>Tempora dolor corporis molestias, recusandae enim cumque dolorum magni nihil rerum, sequi incidunt quasi ut nemo nobis iure quae earum veritatis culpa doloremque ipsa officiis. Deserunt sequi perspiciatis sapiente corrupti?</div>
+            <div>Animi suscipit vero iste, accusantium, provident itaque, in, placeat officiis tenetur saepe reiciendis natus ullam velit quo? Cumque nobis alias, facilis sint suscipit consequuntur, aspernatur dignissimos debitis porro perferendis, consectetur!</div>
+            <div>Itaque sit nam cumque dolorem maxime rerum ipsam veniam beatae maiores illo iure, eos nobis accusantium sunt fugit! Iusto aspernatur optio officiis, labore, provident beatae. Ab quo reiciendis laboriosam dicta.</div>
+            <div>Officia mollitia, voluptatum earum. Dolores odio nemo quo saepe quia numquam perspiciatis harum quidem vero dolorem reiciendis totam voluptatum, minus ullam dignissimos assumenda rerum ipsa vel non ad nihil porro.</div>
+            <div>Hic adipisci dignissimos praesentium vel mollitia veritatis impedit eligendi, amet enim molestiae. Natus sed in, possimus. In, labore totam maxime esse. Molestiae ab, dignissimos eveniet excepturi iste quibusdam consequuntur odit.</div>
+            <div>Veritatis, hic odit. Tempore doloribus, dolorem maxime delectus ad distinctio voluptates, ut reiciendis quas, nulla porro illum impedit rem sit accusantium architecto. Cupiditate iste consequuntur aliquid at et pariatur, nulla!</div>
+            <div>Error dicta reprehenderit laborum officiis minus harum consequuntur magnam, labore praesentium ipsum cupiditate rem animi dignissimos placeat, velit optio libero? Fuga pariatur distinctio laboriosam modi, eveniet maxime maiores quidem at?</div>
+            <div>Rem laborum dolores suscipit maiores provident eum repudiandae tempora non nobis nisi impedit modi assumenda saepe illum, ipsum eos temporibus voluptates ut ullam beatae soluta incidunt eveniet! Natus, optio, sequi.</div>
+            <div>Error deserunt accusantium cupiditate ab, itaque placeat magni, temporibus veritatis quia dolor eaque. Libero voluptatibus eos quibusdam cum! Inventore laborum ad placeat non consequatur rem ipsa quo sed libero esse.</div>
+            <div>Magnam velit saepe non ipsum repellat! Magni blanditiis fuga culpa, dolores beatae reprehenderit itaque neque unde qui maxime distinctio quaerat error quasi eum repellat, corporis rerum. Iure, cum. Architecto, quos.</div>
+            <div>Eligendi dicta at aspernatur. Tempora non deserunt debitis, quod commodi facilis ullam? Ex, molestias perspiciatis optio repellat cum magni quos obcaecati doloribus, non iste tempore fuga ea impedit alias laudantium.</div>
+            <div>Nostrum itaque aliquid, doloremque similique dolor cumque unde, quasi quos animi excepturi fugit ipsum, ducimus accusantium amet neque! Voluptates porro nemo ex cupiditate, deserunt provident ipsa illum officiis architecto vel.</div>
+            <div>Ut cumque nesciunt aliquid fugiat odio iusto at impedit harum adipisci commodi. Nemo explicabo porro minima molestias sequi voluptate illo nobis, blanditiis repellendus vero rem sit optio officia velit praesentium!</div>
+            <div>Esse exercitationem alias cum, molestias voluptatum nihil ad, quia corrupti necessitatibus, possimus eius? Reprehenderit inventore sapiente quia assumenda est, asperiores aspernatur suscipit expedita deserunt, dignissimos sed obcaecati error repudiandae odit.</div>
+            <div>Amet consequatur blanditiis ipsa a fugit maxime distinctio! Natus consectetur commodi, voluptatibus. Neque voluptates expedita omnis sint, minus pariatur, excepturi illum vitae similique labore corporis commodi quam repellendus, accusamus consequuntur.</div>
+            <div>Explicabo, laudantium nam accusamus cum molestias excepturi deserunt eaque exercitationem facilis voluptatem aspernatur, possimus commodi ex quam ad nesciunt, veniam repudiandae doloremque voluptas assumenda, eum. Molestias, vero eaque culpa nesciunt.</div>
+            <div>Laboriosam consequatur accusamus odio soluta error. Assumenda velit deleniti dolorum ipsa illum deserunt, nobis id aperiam ea provident saepe perspiciatis similique mollitia, commodi pariatur inventore reiciendis illo cum perferendis quis?</div>
+            <div>Dolore, culpa voluptatem impedit cum enim temporibus error sunt, perspiciatis laudantium vitae aliquid adipisci veritatis. Expedita id eveniet sed deserunt iure adipisci sit possimus repellendus culpa vero, minus qui voluptate!</div>
+            <div>Illo expedita odit repudiandae optio explicabo illum eligendi modi, quis tenetur omnis nam saepe numquam totam quaerat officia minima nihil facilis quidem cupiditate ullam! Nostrum provident quod dicta adipisci ipsam!</div>
+            <div>Quam, eveniet corrupti at aliquam cum, ipsa, esse officiis ut, officia porro sapiente consequuntur dolorem. Maxime veritatis aperiam accusamus. Doloremque harum modi, expedita laudantium porro eum fuga ad! Mollitia, non!</div>
+            <div>Excepturi laborum atque officia ad consequatur laboriosam eaque accusamus dolore numquam fuga. Vitae optio, quod aperiam doloribus ratione. Ducimus vitae ullam asperiores illum doloremque sint nobis quas assumenda, qui ipsum.</div>
+            <div>Doloremque illum ipsum laborum, debitis! Iure incidunt corrupti culpa, magnam, inventore facere officia fugiat eos odio suscipit amet repudiandae rem earum ratione fuga molestiae nobis eum blanditiis ad, excepturi autem!</div>
+            <div>Repellat quo consectetur molestiae provident adipisci aliquam repellendus sed labore facilis neque dolor laboriosam soluta perspiciatis nulla sequi libero ipsa sunt corporis exercitationem quis natus, deleniti aspernatur. Unde, laudantium, similique.</div>
+            <div>Ea aliquam, expedita laborum repellendus numquam possimus nihil, odio quaerat temporibus unde, qui in magni voluptatem. Quidem eum aliquam consequuntur rerum atque perspiciatis deserunt sequi, eius esse voluptate autem. Magni.</div>
+            <div>Ullam accusamus iure, dignissimos aperiam iste aliquam, fuga vitae quasi facere aliquid harum non dolores vero assumenda, officiis quidem, quibusdam veniam modi ipsum esse? Minima necessitatibus molestiae, ea accusamus voluptate.</div>
+            <div>Dolor ipsa illo facere inventore deserunt tempora totam distinctio, sequi rerum commodi cumque minima tenetur asperiores in placeat eos aliquam. Ipsum vero eum soluta, et iusto voluptatibus reiciendis totam ipsam.</div>
+            <div>Quam inventore tempora nihil ex non quaerat vero veniam perspiciatis. Ipsum suscipit architecto eaque adipisci reiciendis aliquid fugit officia praesentium. Inventore iure, nihil perferendis facere sed, quis possimus sapiente aliquid.</div>
+            <div>Ipsum dicta architecto consectetur eveniet nisi sunt officiis eaque qui, suscipit fuga, ex, quis sint ipsam cumque alias minus laboriosam nihil expedita quisquam nulla dignissimos rerum. Voluptas, eius quasi magni.</div>
+            <div>Dolorum recusandae totam temporibus, impedit atque ex, est laudantium laboriosam, veritatis blanditiis quasi alias et voluptatem obcaecati soluta? Non fugiat enim distinctio commodi tempora repellat molestiae esse itaque cumque doloremque.</div>
+            <div>Nobis iure illum doloremque maxime architecto, sit fugit ab vel repellendus mollitia soluta nisi ut, vero nulla, consequatur nihil pariatur voluptatem. Neque aspernatur vel libero ipsa ad aliquam nobis esse.</div>
+            <div>Corporis dicta ab error blanditiis eligendi quo sed? Earum reiciendis asperiores, aut soluta ex cupiditate quibusdam modi iure recusandae, rem voluptatum quasi vel in ratione quam nihil cum ipsam. Eos.</div>
+            <div>Vel praesentium, voluptas sint neque nisi accusamus a perspiciatis saepe quas. Esse a temporibus ipsa doloremque illo earum voluptate molestiae hic recusandae, officia harum voluptates veritatis neque eum sequi quod.</div>
+            <div>Explicabo, necessitatibus sed. Neque omnis, architecto tenetur facere odio tempore nesciunt ex repellat aliquid nostrum rerum enim deleniti, laudantium voluptate repellendus vitae ipsum ipsa ea culpa, adipisci deserunt delectus quis.</div>
+            <div>Quasi, sint, asperiores. Suscipit sint, nemo earum voluptate, adipisci magni. Atque quas ea molestiae illo vel ut, laudantium optio in commodi excepturi saepe quod aut quibusdam amet deserunt laborum ad.</div>
+            <div>Earum id, ratione laborum vel sit, molestias voluptatibus alias fuga asperiores ea, perspiciatis eum. Iusto mollitia, quas, illo, magni voluptates ut optio vel officia quisquam autem reiciendis dolores veniam error.</div>
+            <div>Error autem, nam ullam officiis! Veritatis id nobis in ullam quaerat. Quos dolorum facere possimus at, nemo laborum omnis autem, laudantium voluptates voluptatibus pariatur quo recusandae, fugit id molestiae. Eum.</div>
+            <div>Alias cupiditate minus autem repudiandae voluptatibus culpa iusto molestias! Architecto quaerat blanditiis nisi, cumque reiciendis ipsa id aperiam totam neque adipisci at, earum perferendis itaque animi accusantium illo distinctio modi!</div>
+            <div>Inventore labore consectetur eveniet, ad animi voluptate nisi. Vel et, quos saepe harum asperiores nam quaerat porro, cumque unde, recusandae deserunt, ut veniam quam incidunt? Molestiae, nam ipsum laborum fuga!</div>
+            <div>Magnam fugiat quidem cumque, quod maiores ratione soluta eligendi iusto eum, veritatis, id voluptas ab ipsam possimus saepe laudantium fugit dignissimos blanditiis totam autem veniam tempora ut. Optio, impedit, ut.</div>
+            <div>Nulla voluptate, delectus voluptatem nisi aliquid temporibus cum nesciunt sed minima ad molestias mollitia, veniam veritatis, consequuntur beatae. Voluptates, deserunt, rem. Laudantium quaerat eum necessitatibus nulla, commodi quas nam animi.</div>
+            <div>Quas asperiores officia iure itaque non at nesciunt alias doloremque rem laudantium odio numquam assumenda impedit tenetur repudiandae, quod adipisci provident illo. Expedita, magni voluptate, assumenda quisquam sed ab culpa!</div>
+            <div>Aspernatur sequi repudiandae dolor, corporis pariatur, excepturi similique, itaque beatae sapiente nostrum fuga nobis numquam id magnam ipsum deserunt ipsam quisquam ea voluptas nulla. Ab saepe neque, dicta tempore facere!</div>
+            <div>Aliquid harum enim assumenda ad ipsam mollitia doloremque nesciunt vel adipisci sequi, vero soluta quisquam ut, ratione deleniti vitae ex? Molestiae quos rerum tempore asperiores harum labore et? Quae, ratione.</div>
+            <div>Tempora inventore accusamus necessitatibus sapiente repellat impedit rem unde cupiditate natus alias ab, possimus, numquam ea illo beatae amet deserunt aliquid, odio pariatur consequuntur laudantium atque voluptatibus! Atque, repellendus cum.</div>
+            <div>Eum veritatis eius, necessitatibus aliquid accusantium eligendi non ducimus repellat sit praesentium vitae nisi, voluptates perspiciatis fugit suscipit magnam eveniet quaerat, laborum iure modi esse. Nemo animi ex optio pariatur.</div>
+            <div>Totam dolore facilis veritatis accusamus quis reiciendis eius ut velit voluptatibus quibusdam! Molestiae itaque molestias at earum, illo, enim! Dicta dolorum corporis possimus minima natus! Expedita obcaecati beatae, eligendi dignissimos.</div>
+            <div>Itaque odio obcaecati in eligendi recusandae! Officia omnis numquam voluptates modi dolores error. Sint, quam quidem excepturi. Commodi error nulla illo incidunt tempora accusantium soluta ratione ex inventore praesentium, modi.</div></div>
         </div>
         <div class="tab-pane" id="tab-rixi">
             <div class="row feature">
                 <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/xy.jpg"
+                    <img class="feature-image img-responsive" src="http://www.januscn.com/uploadfiles/2014/08/201408020922192219.png"
                          alt="Firefox">
                 </div>
                 <div class="col-md-7">
@@ -410,55 +473,9 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane" id="tab-hangguo">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">东风悦达起亚 <span class="text-muted">韩国最早的汽车制造商</span></h2>
-
-                    <p class="lead">东风悦达起亚旗下拥有新一代智跑、新e代福瑞迪、KX CROSS、凯绅、焕驰、全新K5、K4、新K3</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/xy.jpg"
-                         alt="Safari">
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-sport">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/xy.jpg"
-                         alt="Opera">
-                </div>
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">兰博基尼 <span class="text-muted">全球顶级跑车制造商</span>
-                    </h2>
-
-                    <p class="lead">想了解福特汽车的发展史吗</p>
-                    <i class="lead">
-                    	福特汽车在中国的历史可追溯到1913年，当时第一批T型车销售到中国。1924年孙中山先生致信亨利·福特，请他帮助建立中国的汽车工业。作为首家在新中国开拓业务的外国汽车公司，福特汽车当时的董事长亨利·福特亨利.福特二世于1978年得到了邓小平先生的会见，表达了福特汽车公司与中国汽车工业合作的愿望。1978年11月，福特公司设立“中国事务办公室”，以探求在中国成立一家生产重型卡车合资企业的可能性。1979年中，福特向中国出售了750辆F系列卡车。这是自1949年以来美国汽车第一次销售到中国来。
-1993年6月，福特在中国建立零售业务，初期委派了首批5家经销商在中国销售福特汽车。目前，福特拥有10多个经销点，40多个特许授权的服务设施及3个全球零部件分销商，为各市场提供更佳的服务。
-                    </i>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-cross-country">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">我的11路公交车 <span class="text-muted">你懂的</span></h2>
-
-                    <p class="lead">
-                        摩拜单车的出现，让越来越多中国人从这些烦人事中解放出来，并成功推广了一种更健康、环保及时髦的生活方式。
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/xy.jpg"
-                         alt="IE">
-                </div>
-            </div>
-        </div>
+       
+       
+        
     </div>
 
      <!-- <ul class="nav nav-tabs" role="tablist" id="feature-tab2">
@@ -612,5 +629,11 @@
         $(this).siblings().removeClass("active");
     });
 </script>
+<!-- <script>
+	$('.navbar-nav li').click(function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+    });
+</script> -->
 </body>
 </html>
